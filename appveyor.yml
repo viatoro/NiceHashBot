@@ -6,5 +6,9 @@ branches:
     - /v\d+\..+/
     - /release.*/
 artifacts:
-  - path: build/NiceHashBot-*.zip
+  - path: bin\$(configuration)\*.exe
     name: NiceHashBot
+    type: zip
+  - path: bin\$(configuration)\*.dll
+    name: NiceHashBotDll
+    type: zip
