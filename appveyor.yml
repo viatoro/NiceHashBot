@@ -1,9 +1,14 @@
 
 version: "{build}"
+configuration: Release
 branches:
   only:
     - master
     - /v\d+\..+/
     - /release.*/
+after_build:
+  7z a NiceHashBot.zip %APPVEYOR_BUILD_FOLDER%bin\$(configuration)\
+
 artifacts:
-  - path: test.zip
+  - path: NiceHashBot.zip
+    name: NiceHashBot
