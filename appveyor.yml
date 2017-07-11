@@ -6,8 +6,10 @@ branches:
     - master
     - /v\d+\..+/
     - /release.*/
+build:
+  verbosity: minimal
 after_build:
-  7z a NiceHashBot.zip %APPVEYOR_BUILD_FOLDER%\bin\%CONFIGURATION%\*
+  7z a NiceHashBot.zip %APPVEYOR_BUILD_FOLDER%\src\bin\%CONFIGURATION%\*
 
 artifacts:
   - path: NiceHashBot.zip
