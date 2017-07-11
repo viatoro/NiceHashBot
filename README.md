@@ -1,3 +1,16 @@
+## Build
+
+### Continuous Integration and development builds
+
+| CI            | OS            | Status  | Development builds |
+| ------------- | ------------- | -----   | -----------------  |
+| [AppVeyor]    | Windows       | [![AppVeyor](https://img.shields.io/appveyor/ci/viatoro/NiceHashBot.svg)][AppVeyor] | ✓ Build artifacts available for all PRs and branches |
+
+The AppVeyor system automatically builds a Windows .exe for every commit. The latest version is always available [on the landing page](https://ci.appveyor.com/project/ethereum-mining/ethminer) or you can [browse the history](https://ci.appveyor.com/project/ethereum-mining/ethminer/history) to access previous builds.
+
+To download the .exe on a build under 'JOB NAME' select 'Configuration: Release', choose 'ARTIFACTS' then download the zip file.
+
+
 # NiceHashBot
 NiceHash bot for automatic order management.
 
