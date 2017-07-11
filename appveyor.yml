@@ -6,9 +6,4 @@ branches:
     - /v\d+\..+/
     - /release.*/
 artifacts:
-  - path: bin\Debug\*.exe
-    name: NiceHashBot
-    type: zip
-  - path: bin\Debug\*.dll
-    name: NiceHashBotDll
-    type: zip
+  - path: test.zip
