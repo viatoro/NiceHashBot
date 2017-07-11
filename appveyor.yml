@@ -1,2 +1,10 @@
 
 version: "{build}"
+branches:
+  only:
+    - master
+    - /v\d+\..+/
+    - /release.*/
+artifacts:
+  - path: build/NiceHashBot-*.zip
+    name: NiceHashBot
